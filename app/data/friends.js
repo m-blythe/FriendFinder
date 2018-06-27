@@ -1,4 +1,4 @@
-var friendsArray = [
+var friends = [
     {
        "name":"Labrador Retriever",
        "photo":"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12231410/Labrador-Retriever-On-White-01.jpg",
@@ -33,28 +33,7 @@ var friendsArray = [
         "name":"Mastiff",
         "photo":"http://www.billboard.com/files/styles/article_main_image/public/stylus/1235529-taylor-swift-woman-of-the-year-617-409.jpg",
         "scores":[4,4,2,3,2,2,3,2,4,5]
-     },
-     {
-         "name": "doggy",
-         "photo":"http://www.billboard.com/files/styles/article_main_image/public/stylus/1235529-taylor-swift-woman-of-the-year-617-409.jpg",
-         "scores":[4,4,2,3,2,2,3,2,4,5]
-     },
-     {
-         "name": "doggy",
-         "photo":"http://www.billboard.com/files/styles/article_main_image/public/stylus/1235529-taylor-swift-woman-of-the-year-617-409.jpg",
-         "scores":[4,4,2,3,2,2,3,2,4,5]
-     },
-     {
-         "name": "doggy",
-         "photo":"http://www.billboard.com/files/styles/article_main_image/public/stylus/1235529-taylor-swift-woman-of-the-year-617-409.jpg",
-         "scores":[4,4,2,3,2,2,3,2,4,5]
-     },
-     {
-         "name": "doggy",
-         "photo":"http://www.billboard.com/files/styles/article_main_image/public/stylus/1235529-taylor-swift-woman-of-the-year-617-409.jpg",
-         "scores":[4,4,2,3,2,2,3,2,4,5]
-     }
- 
+     } 
  ]
  
  module.exports = friends;

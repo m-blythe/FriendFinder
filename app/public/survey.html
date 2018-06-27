@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Friend Finder Pro</title>
+	<title>Find A Four-Legged Friend</title>
 
-	<!-- Link to the jQuery Library -->
-  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- link to jquery library -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 
   	<!-- Including Font Awesome Icons -->
   	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
@@ -31,9 +32,8 @@
 				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
 				<a href="/" class="brand-logo" id="logo">Friend Finder</a>
 				<ul class="right hide-on-med-and-down" id="head-nav-links">
-					<li><a href="/survey">Survey</a></li>
-					<li><a href="/api/friends">API Friends List</a></li>
-					<li><a href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
+					<li><a href ="./home.html">Home</a></li>
+					<li><a href="./../data/friends.js">Friends List</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -204,40 +204,17 @@
 		</div>
 	</main>
 
-	<footer class="page-footer pink accent-2">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Friend Finder App</h5>
-					<p class="grey-text text-lighten-4">Thank you for taking the brief survey. Your responses will be used for training purposes only :-].</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Links</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2017 angrbrd entertainment
-				<a class="grey-text text-lighten-4 right" href="https://github.com/angrbrd">Reference Work</a>
-			</div>
-		</div>
-	</footer>
 
 	<!-- Modal Dialog Displaying Closest Friend Match -->
 	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<h4>Closest Friend Match</h4>
+			<h4>Best Four-Legged Friend</h4>
 			<div class="divider"></div>
 			<h5 id="userMatch"></h5>
 			<img id="userMatchImage" class="materialboxed" width="650" src="">
 		</div>
 		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+			<a href="./survey.html" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
 		</div>
 	</div>
 
@@ -254,7 +231,7 @@
 			});
 		});
 		// Activate submit button
-		$('#submitButton').on('click', function(event) {
+		$("#submitButton").on("click", function(event) {
 			event.preventDefault();
 			// Gather user inputs
 			var userInput = {
@@ -273,9 +250,9 @@
 					$('#question10').val().trim()
 				]
 			};
-			// console.log('userInput = ' + JSON.stringify(userInput));
+			 console.log("userInput = " + JSON.stringify(userInput));
 			// Add user inputs to friends list
-			$.post('/api/friends', userInput)
+			$.post("/api/friends", userInput)
       		.done(function(data) {
       			// console.log('response = ' + JSON.stringify(data));
       			// Set the name and image values of friend match
@@ -286,5 +263,6 @@
       		});
 		});
 	</script>
+
 </body>
 </html>
