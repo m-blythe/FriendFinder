@@ -1,4 +1,4 @@
-var friends = [
+var friendsArray = [
     {
        "name":"Labrador Retriever",
        "photo":"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12231410/Labrador-Retriever-On-White-01.jpg",
